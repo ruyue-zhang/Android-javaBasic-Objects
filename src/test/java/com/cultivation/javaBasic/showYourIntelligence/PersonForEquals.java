@@ -39,12 +39,11 @@ public class PersonForEquals {
         if(obj == null){
             return false;
         }
-        PersonForEquals s = (PersonForEquals)obj; // s -- obj -- s2
-        if(this.name.equals(s.getName()) && this.yearOfBirth == s.getYearOfBirth()){
-            return true;
-        }else{
+        if (!(obj instanceof PersonForEquals)) {
             return false;
         }
+        PersonForEquals s = (PersonForEquals)obj;
+        return this.name.equals(s.getName()) && this.yearOfBirth == s.getYearOfBirth();
     // --end-->
     }
 
