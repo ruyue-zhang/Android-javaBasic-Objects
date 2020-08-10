@@ -36,7 +36,7 @@ class ObjectTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final Optional<Boolean> expected = Optional.empty();
+        final Optional<Boolean> expected = Optional.of(false);
         // --end-->
 
         assertEquals(expected.get(), referenceToSameObject);
