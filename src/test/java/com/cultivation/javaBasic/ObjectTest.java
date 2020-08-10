@@ -49,9 +49,9 @@ class ObjectTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final String expectedName = "What";
-        final int expectedYearOfBirth = 479;
-        final LocalDate expectedRegisteredDate = LocalDate.now();
+        final String expectedName = null;
+        final int expectedYearOfBirth = 0;
+        final LocalDate expectedRegisteredDate = null;
         // --end-->
 
         assertEquals(expectedName, instance.getName());
