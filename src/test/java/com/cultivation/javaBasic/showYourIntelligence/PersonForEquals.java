@@ -51,7 +51,12 @@ public class PersonForEquals {
     public int hashCode() {
         // TODO: please modify the following code to pass the test
         // <--start
-        throw new NotImplementedException();
+        int result = 17;
+        result = 31 * result + name.hashCode();
+        result = 31 * result + getYearOfBirth();
+        return result;
+
+
         // --end-->
     }
 }
